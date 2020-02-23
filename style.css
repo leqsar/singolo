@@ -55,6 +55,11 @@ header li {
     color: white;
 }
 
+header li:hover {
+    color: #dbcdcd;
+    cursor: default;
+}
+
 h1 {
     margin: 29px 0 0 38px;
     font-size: 25px;
@@ -269,6 +274,11 @@ header::after {
     top: 281px;
     right: 40px;
     background-image: url('assets/arrow2.png');
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    opacity: 40%;
 }
 
 .services-container {
