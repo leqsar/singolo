@@ -79,3 +79,194 @@ header::after {
     height: 6px;
     background-color: #2e3444;
 }
+
+.slider-container {
+    position: relative;
+    display: flex;
+    width:100%;
+    height: 594px;
+    background-color: #f06c64;
+}
+
+.vertical,
+.horizontal {
+    position: relative;
+    display: flex;
+}
+
+.vertical-iphone-image {
+    z-index: 2;
+    width: 188px;
+    height: 333px;
+    margin-left: 123px;
+    margin-top:115px;
+    background-image: url('Layer 6.png');
+    background-position: -14px -135px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #c7c7c7;
+    border-radius: 5px;
+}
+
+.vertical-iphone {
+    z-index: 1;
+    position: absolute;
+    width: 215px;
+    height: 458px;
+    margin-left: 112px;
+    margin-top:53px;
+    background-color: #f2f2f2;
+    border-radius: 27px;
+    box-shadow: 25px 25px #cf5d55;
+}
+
+.vertical-camera-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 70px;
+    left: 216px;
+    width: 3.5px;
+    height: 3.5px;
+    background-color: #f06c64;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #dbcdcd;
+    border-width: 2px;
+}
+
+.vertical-speaker-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 89px;
+    left: 202px;
+    width: 36px;
+    height: 5px;
+    background-color: #adaeae;
+    border-radius: 3px;
+}
+
+.vertical-button-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 460px;
+    left: 198px;
+    width: 42px;
+    height: 42px;
+    background-color: #fafafa;
+    border-radius: 21px;
+}
+
+.vertical-button-square-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 473px;
+    left: 211px;
+    width: 13px;
+    height: 13px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+}
+
+.horizontal-iphone-image {
+    z-index: 2;
+    width: 333px;
+    height: 188px;
+    margin-left: 165px;
+    margin-top:185px;
+    background-image: url('Layer 5.png');
+    background-position: -125px -119px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #c7c7c7;
+    border-radius: 5px;
+}
+
+.horizontal-iphone {
+    z-index: 1;
+    position: absolute;
+    width: 458px;
+    height: 215px;
+    margin-left: 108px;
+    margin-top:174px;
+    background-color: #f2f2f2;
+    border-radius: 27px;
+    box-shadow: 25px 25px #cf5d55;
+}
+
+.horizontal-camera-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 277px;
+    left: 542px;
+    width: 3.5px;
+    height: 3.5px;
+    background-color: #f06c64;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #dbcdcd;
+    border-width: 2px;
+}
+
+.horizontal-speaker-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 265px;
+    left: 525px;
+    width: 5px;
+    height: 36px;
+    background-color: #adaeae;
+    border-radius: 3px;
+}
+
+.horizontal-button-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 260px;
+    left: 117px;
+    width: 42px;
+    height: 42px;
+    background-color: #fafafa;
+    border-radius: 21px;
+}
+
+.horizontal-button-square-iphone {
+    z-index: 2;
+    position: absolute;
+    top: 273px;
+    left: 129px;
+    width: 13px;
+    height: 13px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+}
+
+.slider-horizontal-line {
+    width: 100%;
+    height: 6px;
+    background-color: #eb676b;
+    border-width: 0;
+}
+
+.arrow-left {
+    position: absolute;
+    width: 16px;
+    height: 27px;
+    top: 281px;
+    left: 42px;
+    background-image: url('arrow.png');
+}
+
+.arrow-right {
+    position: absolute;
+    width: 16px;
+    height: 27px;
+    top: 281px;
+    right: 40px;
+    background-image: url('arrow2.png');
+}
