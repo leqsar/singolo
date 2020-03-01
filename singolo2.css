@@ -103,11 +103,13 @@ ul {
 
 .grid {
     display: grid;
+    height: 603px;
     margin-left: 41px;
     margin-top: 18px;
     grid-template-rows: 187px 188px 188px;
     grid-template-columns: 219px 219px 220px 220px;
     grid-gap: 20px;
+    overflow: hidden;
 }
 
 .grid div {
