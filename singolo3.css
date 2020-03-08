@@ -1,0 +1,160 @@
+p,
+body,
+ul,
+h2,
+h1,
+hr {
+    margin: 0;
+}
+
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+fieldset,
+input {
+    border: 0;
+    padding: 0;
+}
+
+.request-container {
+    display: flex;
+    height: 654px;
+    flex-direction: column;
+    background-color: #f06c64;
+}
+
+.request-content-heading {
+    margin-top: 60px;
+    margin-left: 40px;
+    color: #f0d3d4;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Lato', black;
+}
+
+.request-content-subhead {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #f0d3d4;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Lato', thin;
+    line-height: 1.6;
+}
+
+.form-container {
+    display: flex;
+}
+
+.form-info {
+    display: flex;
+    width: 619px;
+    height: 363px;
+    margin-top: 46px;
+    margin-left: 40px;
+    flex-direction: column;
+}
+
+.form-info input::placeholder {
+    color: #f28a8c;
+    font-family: 'Lato', thin;
+    font-size: 12px;
+    text-indent: 14px;
+}
+
+.form-info input:nth-child(-n+4) {
+    height: 38px;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.form-info input:nth-child(1) {
+    margin-top: 0;
+}
+
+.form-info input:last-child {
+    height: 201px;
+}
+
+.form-info input:last-child::placeholder {
+    line-height: 201;
+    vertical-align: text-top;
+}
+
+.form-info input {
+    width: 100%;
+    background-color: #d7554e;
+}
+
+.contact-container {
+    width: 309px;
+    margin-top: 45px;
+    margin-left: 18px;
+    color: #f0d3d4;
+}
+
+.contact-content-heading {
+    font-size: 18px;
+    font-family: 'Lato', black;
+    font-weight: bold;
+}
+
+.contact-content-info {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: 'Lato', thin;
+    line-height: 1.8;
+}
+
+.contact-info {
+    margin-top: 27px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.contact-info i {
+    font-size: 11px;
+}
+
+.contact-info span{
+    margin-left: 10px;
+}
+
+.contact-info a {
+    margin-left: 8px;
+}
+
+.contact-info li:nth-child(2),
+.contact-info li:last-child {
+    margin-top: 5px;
+}
+
+.contact-info a {
+    color: #f0d3d4;
+    font-family: 'Lato', thin;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 40px;
+    background-color: #d7554e;
+    color: #f0d3d4;
+    font-size: 13px;
+    border-radius: 5px;
+}
