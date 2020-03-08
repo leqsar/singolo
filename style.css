@@ -461,7 +461,7 @@ header::after {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 870px;
+    height: 869px;
     background-color: #292d37;
     color: #666d8a;
 }
@@ -755,6 +755,7 @@ header::after {
 fieldset,
 input {
     border: 0;
+    padding: 0;
 }
 
 .request-container {
