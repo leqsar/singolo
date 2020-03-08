@@ -158,3 +158,11 @@ input {
     font-size: 13px;
     border-radius: 5px;
 }
+
+.request-container-line {
+    width: 100%;
+    height: 6px;
+    margin-top: 33px;
+    background-color: #eb676b;
+    border: 0;
+}
