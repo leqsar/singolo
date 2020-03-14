@@ -24,6 +24,12 @@ li {
     list-style-type: none;
 }
 
+header {
+    position: sticky;
+    z-index: 3;
+    top: -1px;
+}
+
 .header-container {
     display: flex;
     width: 100%;
@@ -38,7 +44,7 @@ header ul {
 }
 
 header li:first-child {
-    color: #f06c64;
+    color: white;
 }
 
 header li:nth-child(-n+4):after{
@@ -249,6 +255,11 @@ header::after {
     border-style: solid;
     border-color: #bdbdbd;
     border-width: 2px;
+}
+
+.iphone-off {
+    background-color: black;
+    background-image: none;
 }
 
 .slider-horizontal-line {
@@ -620,6 +631,12 @@ header::after {
     position: absolute;
     left: -35px;
     top: -60px;
+}
+
+.grid-border {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #F06C64;
 }
 
 .portfolio-line {
