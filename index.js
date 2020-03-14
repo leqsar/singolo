@@ -13,11 +13,11 @@ window.onload = () => {
         elem = event.target;
         recolor(elem);
         let textMenu = event.target.textContent;
-        if (textMenu == 'SERVICES') {servicesContainer.scrollIntoView();}
-        if (textMenu == 'PORTFOLIO') {portfolioContainer.scrollIntoView();}
-        if (textMenu == 'HOME') {sliderContainer.scrollIntoView();}
-        if (textMenu == 'ABOUT') {aboutContainer.scrollIntoView();}
-        if (textMenu == 'CONTACT') {requestContainer.scrollIntoView();}
+        if (textMenu == 'SERVICES') {servicesContainer.scrollIntoView({behavior: "smooth"});}
+        if (textMenu == 'PORTFOLIO') {portfolioContainer.scrollIntoView({behavior: "smooth"});}
+        if (textMenu == 'HOME') {sliderContainer.scrollIntoView({behavior: "smooth"});}
+        if (textMenu == 'ABOUT') {aboutContainer.scrollIntoView({behavior: "smooth"});}
+        if (textMenu == 'CONTACT') {requestContainer.scrollIntoView({behavior: "smooth"});}
     });
     document.addEventListener('scroll', () => {
         let scrollTop = window.pageYOffset;
@@ -81,5 +81,23 @@ window.onload = () => {
 
     /////////////////////////////////////
 
-    
+    const portfolioMenu = document.querySelector('.navigation-content');
+    const menuElements = portfolioMenu.querySelectorAll('LI');
+    let idArr = [];
+    images.forEach((elem) => {
+        idArr.push(elem.id);
+    });
+    portfolioMenu.addEventListener('click', () => {
+        menuElements.forEach((item, i) => {
+            item.classList.remove('--active');
+            item.style.color = 'inherit';
+        });
+        event.target.classList.add('--active');
+        event.target.style.color = 'white';
+        idArr=idArr.splice(-1).concat(idArr);
+        images.forEach((elem, i) => {
+            elem.style.order = `${idArr[i]}`;
+        });
+    });
+
 }
