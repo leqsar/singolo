@@ -12,6 +12,10 @@ window.onload = () => {
     menu.addEventListener('click', (event) => {
         elem = event.target;
         recolor(elem);
+        if (menu.querySelector('.active') !== null) {
+            menu.querySelector('.active').classList.remove('active');
+        }
+        event.target.classList.add('active');
         let textMenu = event.target.textContent;
         if (textMenu == 'SERVICES') {servicesContainer.scrollIntoView({behavior: "smooth"});}
         if (textMenu == 'PORTFOLIO') {portfolioContainer.scrollIntoView({behavior: "smooth"});}
@@ -53,21 +57,27 @@ window.onload = () => {
 
     //подумать как сделать одной функцией
     const iphoneImageVer = document.querySelector('.vertical-iphone-image');
-    const iphoneImageHor = document.querySelector('.horizontal-iphone-image');
-    iphoneImageVer.addEventListener('click', () => {
+    const iphoneImageHor = document.querySelector('.horizontal-iphone-image'),
+        verticalIphoneButton = document.querySelector('.vertical-button-iphone'),
+        horizontalIphoneButton = document.querySelector('.horizontal-button-iphone');
+    function verticalIphoneScreenChange(iphoneImageVer) {
         if (iphoneImageVer.classList.contains("iphone-off")) {
             iphoneImageVer.classList.remove('iphone-off');
         } else {
             iphoneImageVer.classList.add('iphone-off');
         }
-    });
-    iphoneImageHor.addEventListener('click', () => {
+    }
+    function horizontalIphoneScreenChange(iphoneImageHor) {
         if (iphoneImageHor.classList.contains("iphone-off")) {
             iphoneImageHor.classList.remove('iphone-off');
         } else {
             iphoneImageHor.classList.add('iphone-off');
         }
-    });
+    }
+    verticalIphoneButton.addEventListener('click', verticalIphoneScreenChange());
+    iphoneImageVer.addEventListener('click', verticalIphoneScreenChange());
+    horizontalIphoneButton.addEventListener('click', horizontalIphoneScreenChange(iphoneImageHor));
+    iphoneImageHor.addEventListener('click', horizontalIphoneScreenChange(iphoneImageHor));
     /////////////////////////////////////
 
     const grid = document.querySelector('.grid');
