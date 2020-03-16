@@ -102,7 +102,6 @@ window.onload = () => {
     ////////////////////////////////////
 
     const rightArrow = document.querySelector('.arrow-right');
-    const slide = document.querySelector('.slide');
     const sliderWrap = document.querySelector('.slider-wrap');
     const vertical = document.querySelector('.vertical');
     const horizontal = document.querySelector('.horizontal');
@@ -302,3 +301,62 @@ window.onload = () => {
         checker = 'left';
     });
 }
+
+/////////////////////////////////////////////////////////
+
+const button = document.querySelector('.btn'),
+    nameField = document.querySelector('.name-field'),
+    emailField = document.querySelector('.email-field'),
+    subjectField = document.querySelector('.subject-field'),
+    descriptionField = document.querySelector('.description-field'),
+    dispatchWindow = document.querySelector('.dispatch-window-container'),
+    submitButton = document.querySelector('.submit-button'),
+    form = document.querySelector('.form-info');
+button.addEventListener('click', event => {
+    event.preventDefault();
+    function deleteText(form) {
+        form.querySelectorAll('INPUT').forEach(item => {
+            item.value = '';
+        });
+    }
+    if(!emailField.checkValidity()){
+        alert('You did not insert your email or type of email is wrong');
+        deleteText(form);
+    } else if (!nameField.checkValidity()) {
+        alert('You did not insert your name or type of name is wrong');
+        deleteText(form);
+    } else {
+        if (document.querySelector('.subject') !== null) {
+            document.querySelector('.subject').remove();
+            document.querySelector('.description').remove();
+        }
+        const subjectOuter = document.createElement('P'),
+            descriptionOuter = document.createElement('P');
+        submitButton.before(subjectOuter);
+        submitButton.before(descriptionOuter);
+        subjectOuter.classList.add('subject');
+        descriptionOuter.classList.add('description');
+        button.style.visibility = 'hidden';
+        dispatchWindow.style.visibility = 'visible';
+        let subject, description;
+        if (subjectField.value == '') {
+            subject = document.createTextNode('Без темы');
+
+        } else {
+            subject = document.createTextNode(`Тема: ${subjectField.value}`)
+        }
+        subjectOuter.append(subject);
+        if (descriptionField.value == '') {
+            description = document.createTextNode('Без jописания');
+
+        } else {
+            description = document.createTextNode(`Описание: ${descriptionField.value}`)
+        }
+        descriptionOuter.append(description);
+        submitButton.addEventListener('click', () => {
+            dispatchWindow.style.visibility = 'hidden';
+            button.style.visibility = 'visible';
+        })
+        deleteText(form);
+    }
+ });

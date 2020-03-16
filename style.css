@@ -108,20 +108,7 @@ header::after {
     transition-duration: 3s;
 }
 
-
-.slide {
-    position: absolute;
-    left: 1020px;
-    width: 1020px;
-    height: 594px;
-    background: #648BF0;
-    background-image: url('phone.png');
-    transition-property: left;
-    transition-duration: 3s;
-}
-
-.slide0,
-.slide2 {
+.slide0 {
     position: absolute;
     display: flex;
     left: -1020px;
@@ -966,6 +953,41 @@ input {
     margin-top: 33px;
     background-color: #eb676b;
     border: 0;
+}
+
+.dispatch-window-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 310px;
+    background-color: white;
+    visibility: hidden;
+    border-radius: 10px;
+    border-color: #292c37;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 20px;
+}
+
+.subject,
+.description {
+    width: 90%;
+    height: 100px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.submit-button {
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #292c37;
+    text-align: center;
+    color: white;
 }
 
 footer {
