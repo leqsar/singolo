@@ -56,28 +56,28 @@ window.onload = () => {
     ///////////////////////////////////
 
     //подумать как сделать одной функцией
-    const iphoneImageVer = document.querySelector('.vertical-iphone-image');
-    const iphoneImageHor = document.querySelector('.horizontal-iphone-image'),
+    const iphoneImageVer = document.querySelector('.vertical-iphone-image'),
+        iphoneImageHor = document.querySelector('.horizontal-iphone-image'),
         verticalIphoneButton = document.querySelector('.vertical-button-iphone'),
         horizontalIphoneButton = document.querySelector('.horizontal-button-iphone');
-    function verticalIphoneScreenChange(iphoneImageVer) {
+    function verticalIphoneScreenChange() {
         if (iphoneImageVer.classList.contains("iphone-off")) {
             iphoneImageVer.classList.remove('iphone-off');
         } else {
             iphoneImageVer.classList.add('iphone-off');
         }
     }
-    function horizontalIphoneScreenChange(iphoneImageHor) {
+    function horizontalIphoneScreenChange() {
         if (iphoneImageHor.classList.contains("iphone-off")) {
             iphoneImageHor.classList.remove('iphone-off');
         } else {
             iphoneImageHor.classList.add('iphone-off');
         }
     }
-    verticalIphoneButton.addEventListener('click', verticalIphoneScreenChange());
-    iphoneImageVer.addEventListener('click', verticalIphoneScreenChange());
-    horizontalIphoneButton.addEventListener('click', horizontalIphoneScreenChange(iphoneImageHor));
-    iphoneImageHor.addEventListener('click', horizontalIphoneScreenChange(iphoneImageHor));
+    verticalIphoneButton.addEventListener('click', verticalIphoneScreenChange);
+    iphoneImageVer.addEventListener('click', verticalIphoneScreenChange);
+    horizontalIphoneButton.addEventListener('click', horizontalIphoneScreenChange);
+    iphoneImageHor.addEventListener('click', horizontalIphoneScreenChange);
     /////////////////////////////////////
 
     const grid = document.querySelector('.grid');
