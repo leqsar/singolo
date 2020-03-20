@@ -8,7 +8,7 @@ window.onload = () => {
     const listLi = menu.querySelectorAll('LI');
     let elem;
 
-    //рассмотреть этот пункт, сделать через якоря
+    //меню
     menu.addEventListener('click', (event) => {
         elem = event.target;
         recolor(elem);
@@ -17,11 +17,11 @@ window.onload = () => {
         }
         event.target.classList.add('active');
         let textMenu = event.target.textContent;
-        if (textMenu == 'SERVICES') {servicesContainer.scrollIntoView({behavior: "smooth"});}
-        if (textMenu == 'PORTFOLIO') {portfolioContainer.scrollIntoView({behavior: "smooth"});}
-        if (textMenu == 'HOME') {sliderContainer.scrollIntoView({behavior: "smooth"});}
-        if (textMenu == 'ABOUT') {aboutContainer.scrollIntoView({behavior: "smooth"});}
-        if (textMenu == 'CONTACT') {requestContainer.scrollIntoView({behavior: "smooth"});}
+        if (textMenu == 'SERVICES') {servicesContainer.scrollIntoView();}
+        if (textMenu == 'PORTFOLIO') {portfolioContainer.scrollIntoView();}
+        if (textMenu == 'HOME') {sliderContainer.scrollIntoView();}
+        if (textMenu == 'ABOUT') {aboutContainer.scrollIntoView();}
+        if (textMenu == 'CONTACT') {requestContainer.scrollIntoView();}
     });
     document.addEventListener('scroll', () => {
         let scrollTop = window.pageYOffset;
@@ -55,7 +55,7 @@ window.onload = () => {
     }
     ///////////////////////////////////
 
-    //подумать как сделать одной функцией
+    //выключение телефонов
     const iphoneImageVer = document.querySelector('.vertical-iphone-image'),
         iphoneImageHor = document.querySelector('.horizontal-iphone-image'),
         verticalIphoneButton = document.querySelector('.vertical-button-iphone'),
@@ -80,6 +80,7 @@ window.onload = () => {
     iphoneImageHor.addEventListener('click', horizontalIphoneScreenChange);
     /////////////////////////////////////
 
+    //рамка для картинок
     const grid = document.querySelector('.grid');
     const images = grid.querySelectorAll('DIV');
     grid.addEventListener('click', (event) => {
@@ -91,6 +92,7 @@ window.onload = () => {
 
     /////////////////////////////////////
 
+    //свап картинок
     const portfolioMenu = document.querySelector('.navigation-content');
     const menuElements = portfolioMenu.querySelectorAll('LI');
     let idArr = [];
@@ -111,6 +113,7 @@ window.onload = () => {
     });
     ////////////////////////////////////
 
+    //слайдер
     const rightArrow = document.querySelector('.arrow-right');
     const sliderWrap = document.querySelector('.slider-wrap');
     const vertical = document.querySelector('.vertical');
