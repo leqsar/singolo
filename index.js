@@ -112,8 +112,6 @@ window.onload = () => {
         });
     });
     ////////////////////////////////////
-
-    //слайдер
     const rightArrow = document.querySelector('.arrow-right');
     const sliderWrap = document.querySelector('.slider-wrap');
     const vertical = document.querySelector('.vertical');

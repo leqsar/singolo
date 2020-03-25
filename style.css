@@ -1038,3 +1038,210 @@ footer p {
     cursor: pointer;
     border-color: #d7554e;
 }
+
+
+@media (min-width: 768px) and (max-width: 1020px)  {
+    html {
+        width: 100vw;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .services-container {
+        height: 675px;
+    }
+
+    .grid {
+        display: grid;
+        height: 806px;
+        margin-left: 41px;
+        margin-top: 18px;
+        grid-template-rows: 187px 188px 188px 188px;
+        grid-template-columns: 219px 219px 220px;
+        grid-gap: 20px;
+        overflow: hidden;
+    }
+
+    .portfolio-container {
+        width: 100%;
+        height: 1072px;
+    }
+
+    .slider-wrap {
+        width: 100%;
+    }
+
+    header nav {
+        margin: 41px 0 0 calc(100% - 567.53px);
+    }
+
+    .about-container {
+        height: 19.1%;
+    }
+
+    .about-info {
+        width: 100%;
+        margin-left: 0;
+        height: 53.2%;
+    }
+
+    .about-info-first,
+    .about-info-second,
+    .about-info-third {
+        margin-left: 41px;
+        height: 100%;
+        width: 28.5%;
+    }
+
+    .about-info-first img,
+    .about-info-second img ,
+    .about-info-third img  {
+        width: 100%;
+        height: 60.8%;
+    }
+
+    .about-info-second,
+    .about-info-third {
+        margin-left: calc((14.5% - 80px) / 2);
+    }
+
+    .request-container {
+        height: 17.6%;
+    }
+
+    .request-content-heading {
+        margin-top: 8.5%;
+    }
+
+    .footer-social-links {
+        margin-left: calc(100% - 329px);
+    }
+
+    footer p {
+        margin-left: 40px;
+        color: #666d8a;
+        font-family: 'Lato', thin;
+        font-size: 12px;
+    }
+
+    .vertical-iphone-image {
+        width: 141px;
+        height: 250px;
+        margin-left: 14.7vw;
+        margin-top: 140px;
+        background-position: -14px -135px;
+    }
+
+    .vertical-iphone {
+        width: 162px;
+        height: 344px;
+        margin-left: 13.9vw;
+        margin-top: 90px;
+        background-color: #f2f2f2;
+        border-radius: 27px;
+        box-shadow: 25px 25px #cf5d55;
+    }
+
+    .vertical-camera-iphone {
+        top: 105px;
+        left: 21.8vw;
+        width: 3px;
+        height: 3px;
+    }
+
+    .vertical-speaker-iphone {
+        top: 118px;
+        left: 20.8vw;
+        width: 27px;
+        height: 4px;
+    }
+
+    .vertical-button-iphone {
+        top: 398px;
+        left: 20.8vw;
+        width: 31.5px;
+        height: 31.5px;
+        border-radius: 15px;
+    }
+
+    .vertical-button-square-iphone {
+        top: 405px;
+        left: 21.6vw;
+        width: 12.4px;
+        height: 12.4px;
+        border-radius: 4.5px;
+        border-width: 2px;
+    }
+
+
+    .horizontal-iphone-image {
+        width: 250px;
+        height: 141px;
+        margin-left: 22vw;
+        margin-top: 144px;
+        background-position: -14px -135px;
+    }
+
+    .horizontal-iphone {
+        width: 344px;
+        height: 162px;
+        margin-left: 18vw;
+        margin-top: 133px;
+        background-color: #f2f2f2;
+        border-radius: 27px;
+        box-shadow: 25px 25px #cf5d55;
+    }
+
+    .horizontal-camera-iphone {
+        top: 213px;
+        left: 59vw;
+        width: 3px;
+        height: 3px;
+    }
+
+    .horizontal-speaker-iphone {
+        top: 201px;
+        left: 57vw;
+        width: 4px;
+        height: 27px;
+    }
+
+    .horizontal-button-iphone {
+        top: 199px;
+        left: 18vw;
+        width: 31.5px;
+        height: 31.5px;
+        border-radius: 15px;
+    }
+
+    .horizontal-button-square-iphone {
+        top: 208px;
+        left: 19vw;
+        width: 12.4px;
+        height: 12.4px;
+        border-radius: 4.5px;
+        border-width: 2px;
+    }
+
+    .about-content-text {
+        width: 89.5%;
+    }
+
+    .about-info-text {
+        width: 28.5vw;
+    }
+
+    .form-info {
+        width: 57.7vw;
+    }
+
+    .request-content-heading {
+        margin-top: 7vh;
+    }
+}
