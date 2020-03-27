@@ -1039,6 +1039,18 @@ footer p {
     border-color: #d7554e;
 }
 
+.burger-menu-icon {
+    display: none;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+.burger-menu-heading {
+    display: none;
+}
+
 
 @media (min-width: 768px) and (max-width: 1020px)  {
     html {
@@ -1244,4 +1256,346 @@ footer p {
     .request-content-heading {
         margin-top: 7vh;
     }
+
+    .services-content {
+        display: grid;
+        grid-template-rows: repeat(6, calc(104px + 6vw));
+        grid-template-columns: 330px 330px;
+        margin: 0 auto;
+    }
+
+    .burger-menu-icon {
+        display: none;
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    .burger-menu-heading {
+        display: none;
+    }
 }
+
+@media (min-width: 375px) and (max-width: 767px)  {
+    body {
+        width: 100%;
+    }
+
+    .footer-social-links {
+        margin: 22px auto;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .request-container {
+        height: 969px;
+    }
+
+    .form-info {
+        width: 84vw;
+        margin: 19px auto;
+    }
+
+    .btn {
+        width: 84vw;
+    }
+
+    .contact-container {
+        width: 84vw;
+        margin: 19px auto;
+    }
+
+    .request-container-line {
+        margin-top: 134px;
+    }
+
+    .about-container {
+        min-height: 1754px;
+        max-height: 2380px;
+        height: 420vw;
+    }
+
+    .about-info {
+        flex-direction: column;
+        width: 84vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    .about-info-first,
+    .about-info-second,
+    .about-info-third {
+        width: 100%;
+        margin-top: 34px;
+    }
+
+    .about-content-text {
+        width: 84vw;
+    }
+
+    .about-info-text {
+        width: 100%;
+    }
+
+    .about-info-first img,
+    .about-info-second img,
+    .about-info-third img {
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .about-container p:first-child {
+        margin-top: 30px;
+    }
+
+    .grid {
+        max-width: 450px;
+        min-width: 315px;
+        width: 84vw;
+        grid-template-rows: 128px 128px 128px 128px;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        grid-gap: 3.7vw;
+        margin: 18px auto;
+    }
+
+    .services-container {
+        height: 267vw;
+        min-height: 1080px;
+        max-height: 1200px;
+    }
+
+    .services-content {
+        display: grid;
+        grid-template-rows: repeat(6, calc(104px + 8vw));
+        grid-template-columns: 330px;
+        margin: 0 auto;
+    }
+
+    .services-design,
+    .services-inovative,
+    .services-love,
+    .services-responsive,
+    .services-support,
+    .services-star {
+        margin: 4vw 0;
+    }
+
+    .slider-wrap {
+        width: 100vw;
+        height: 58vw;
+    }
+
+    .arrow-left {
+        top: 100px;
+        left: 20px;
+    }
+
+    .arrow-right {
+        top: 100px;
+        left: 355px;
+    }
+
+    .vertical-iphone-image {
+        width: 70px;
+        height: 122px;
+        margin-left: 14.7vw;
+        margin-top: 140px;
+        background-position: -14px -135px;
+    }
+
+    .vertical-iphone {
+        width: 80px;
+        height: 168px;
+        margin-left: 13.9vw;
+        margin-top: 90px;
+        background-color: #f2f2f2;
+        border-radius: 13px;
+        box-shadow: 25px 25px #cf5d55;
+    }
+
+    .vertical-camera-iphone {
+        top: 105px;
+        left: 21.8vw;
+        width: 1.5px;
+        height: 1.5px;
+    }
+
+    .vertical-speaker-iphone {
+        top: 118px;
+        left: 20.8vw;
+        width: 13px;
+        height: 2px;
+    }
+
+    .vertical-button-iphone {
+        top: 398px;
+        left: 20.8vw;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+    }
+
+    .vertical-button-square-iphone {
+        top: 405px;
+        left: 21.6vw;
+        width: 6px;
+        height: 6px;
+        border-radius: 4.5px;
+        border-width: 2px;
+    }
+
+
+    .horizontal-iphone-image {
+        width: 122px;
+        height: 70px;
+        margin-left: 14.7vw;
+        margin-top: 140px;
+        background-position: -14px -135px;
+    }
+
+    .horizontal-iphone {
+        width: 168px;
+        height: 80px;
+        margin-left: 13.9vw;
+        margin-top: 90px;
+        background-color: #f2f2f2;
+        border-radius: 13px;
+        box-shadow: 25px 25px #cf5d55;
+    }
+
+    .horizontal-camera-iphone {
+        top: 105px;
+        left: 21.8vw;
+        width: 1.5px;
+        height: 1.5px;
+    }
+
+    .horizontal-speaker-iphone {
+        top: 118px;
+        left: 20.8vw;
+        width: 2px;
+        height: 13px;
+    }
+
+    .horizontal-button-iphone {
+        top: 398px;
+        left: 20.8vw;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+    }
+
+    .horizontal-button-square-iphone {
+        top: 405px;
+        left: 21.6vw;
+        width: 6px;
+        height: 6px;
+        border-radius: 4.5px;
+        border-width: 2px;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    .header-menu {
+        display: none;
+        width: 80vw;
+        height: 1000px;
+        background-color: #292c37;
+   }
+
+   .heading {
+       margin-left: 40vw;
+   }
+
+    .header-menu ul {
+        flex-direction: column;
+    }
+
+    .header-menu li {
+        margin-top: 20px;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    .menu-btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu-btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    #menu-checkbox {
+        opacity: 0;
+    }
+
+    #menu-checkbox:checked ~ .menu-btn {
+        transform: rotate(90deg);
+    }
+
+    #menu-checkbox:checked ~ .header-menu {
+        display: block;
+        margin-left: 0;
+    }
+
+    #menu-checkbox:checked ~ .heading {
+        display: none;
+    }
+
+    #menu-checkbox:checked ~ .header-menu .burger-menu-heading {
+        display: inherit;
+        position: absolute;
+        left: 19vw;
+        top: 20px;
+        font-size: 25px;
+        font-family: 'Lato', black;
+        color: white;
+        font-weight: normal;
+        letter-spacing: 0.02px;
+    }
+
+    #menu-checkbox:checked ~ .header-menu ul {
+        margin-top: 184px;
+        margin-left: 19vw;
+    }
+
+
+    #menu-checkbox:checked ~ .header-menu li {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.035em;
+    }
